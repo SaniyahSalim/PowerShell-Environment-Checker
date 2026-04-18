@@ -1,0 +1,3 @@
+"ServerName","Url","LastStatus","ResponseTime","LastCheckTime","DownSince","LastDownAlertTime"
+"Dev-Server","http://localhost:8081","UP","79","18-04-2026 19:37:16","",""
+"QA-Server","http://localhost:8082","UP","9","18-04-2026 19:37:16","",""

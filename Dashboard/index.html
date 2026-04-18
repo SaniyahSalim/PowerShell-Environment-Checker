@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Server Monitoring Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <div class="page">
+      <div class="topbar">
+        <h1>Server monitoring dashboard</h1>
+        <span class="refresh-badge" id="lastRefresh">Last checked: —</span>
+      </div>
+      <div class="metrics">
+        <div class="metric">
+          <div class="metric-label">Total servers</div>
+          <div class="metric-value blue" id="totalCount">—</div>
+        </div>
+        <div class="metric">
+          <div class="metric-label">Servers up</div>
+          <div class="metric-value green" id="upCount">—</div>
+        </div>
+        <div class="metric">
+          <div class="metric-label">Servers down</div>
+          <div class="metric-value red" id="downCount">—</div>
+        </div>
+        <div class="metric">
+          <div class="metric-label">Overall uptime</div>
+          <div class="metric-value green" id="uptimePct">—</div>
+        </div>
+      </div>
+      <div class="cards" id="serverCards"></div>
+      <div class="section-title">All servers</div>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th style="width: 16%">Server</th>
+              <th style="width: 22%">URL</th>
+              <th style="width: 10%">Status</th>
+              <th style="width: 14%">Response (ms)</th>
+              <th style="width: 10%">Uptime</th>
+              <th style="width: 16%">Last check</th>
+              <th style="width: 12%">Down since</th>
+            </tr>
+          </thead>
+          <tbody id="serverTableBody"></tbody>
+        </table>
+      </div>
+      <div class="chart-wrap">
+        <div class="section-title">Response time (ms)</div>
+        <div class="legend">
+          <span
+            ><span class="legend-dot" style="background: #639922"></span
+            >Up</span
+          >
+          <span
+            ><span class="legend-dot" style="background: #e24b4a"></span
+            >Down</span
+          >
+        </div>
+        <div style="position: relative; width: 100%; height: 250px">
+          <canvas
+            id="responseChart"
+            role="img"
+            aria-label="Bar chart of server response times"
+            >Response times per server.</canvas
+          >
+        </div>
+      </div>
+    </div>
+    <script src="dashboard.js"></script>
+  </body>
+</html>
