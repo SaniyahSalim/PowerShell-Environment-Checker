@@ -1,3 +1,5 @@
 "ServerName","Url","LastStatus","ResponseTime","LastCheckTime","DownSince","LastDownAlertTime"
-"Dev-Server","http://localhost:8081","UP","79","18-04-2026 19:37:16","",""
-"QA-Server","http://localhost:8082","UP","9","18-04-2026 19:37:16","",""
+"Dev-Server","http://localhost:8081","UP","72","18-04-2026 23:10:06","",""
+"QA-Server","http://localhost:8082","UP","27","18-04-2026 23:10:06","",""
+"PROD1-Server","http://localhost:8083","UP","31","18-04-2026 23:10:06","",""
+"PROD2-Server","http://localhost:8084","DOWN","0","18-04-2026 23:10:06","18-02-2026 23:00:27","18-04-2026 23:10:06"
